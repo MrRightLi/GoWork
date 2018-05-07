@@ -1,0 +1,2 @@
+INFO: 2018/05/07 10:45:29 test.go:10: Special Information
+ERROR: 2018/05/07 10:45:29 test.go:12: Something has failed

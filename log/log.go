@@ -1,4 +1,4 @@
-package yylog
+package ll
 
 import (
 	"io"
@@ -14,10 +14,11 @@ var (
 	Error   *log.Logger // Critical problem
 )
 
-var LogPath = "yyInfo.txt"
+const LOG_PATH  = "/Users/mrrightli/go/src/GoWork/Runtime/log/lllog.txt"
 
 func init() {
-	file, err := os.OpenFile(LogPath,
+
+	file, err := os.OpenFile(LOG_PATH,
 		os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {
 		log.Fatalln("Failed to open error log file:", err)

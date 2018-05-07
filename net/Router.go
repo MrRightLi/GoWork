@@ -36,6 +36,11 @@ func main() {
 		v1.GET("/:id", FetchSingleUser)
 	}
 
+	test := router.Group("/api/test/")
+	{
+		test.GET("/:id", FetchSingleUser)
+	}
+
 	router.Run(":2824")
 }
 
